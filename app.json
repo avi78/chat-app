@@ -3,8 +3,9 @@
     "name": "chatapp",
     "slug": "chatapp",
     "version": "1.0.0",
+    "plugins": ["@react-native-firebase/app","@react-native-firebase/auth"],
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/logo.png",
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
@@ -15,13 +16,20 @@
       "supportsTablet": true
     },
     "android": {
+      "googleServicesFile": "./google-services.json",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.avi78.chatapp"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "2700d945-755f-4579-b31c-a13f9f66947b"
+      }
     }
   }
 }
